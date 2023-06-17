@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+      "baseUrl": "src",
+      "outDir": "dist",
+      "esModuleInterop": true,
+      "module": "ES6",
+      "moduleResolution": "Node",
+      "paths": {
+        "@/*": ["*"]
+      },
+      "plugins": [
+        // Transform paths in output .js files
+        { "transform": "typescript-transform-paths" },
+      ]
+  },
+  "ts-node": {
+      "esm": true,
+      "transpileOnly": true,
+      "require": [ "typescript-transform-paths/register" ]
+  }
+
+}

@@ -7,6 +7,7 @@ import { Router } from 'express';
 const usersRouter = Router();
 
 // usersRouter.post('/', validateBody(createUserSchema), usersPost);
+usersRouter.get('/', (_req, res) => res.send('OK!'));
+// usersRouter.post('/', usersPost);
 
-
-export { usersRouter };
+export {usersRouter} ;

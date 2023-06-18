@@ -4,3 +4,15 @@ It's a sistem for...
 
 ## Beauty Studio
 
+### API
+
+##### helloworld
+get '/'
+
+##### Users 
+Crie seus usuários com email, telefone e senha
+ - post '/register'
+Entre com um dos dois
+ - post '/login'
+
+##### 

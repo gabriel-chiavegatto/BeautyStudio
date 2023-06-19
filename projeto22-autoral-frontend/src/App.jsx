@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './components/pages/Home/Home'
-import Register from './components/pages/Register/Register';
-import Login from './components/pages/Login/Login'
+import Home from './pages/Home/Home'
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login'
 
 function App() {
   const [count, setCount] = useState(0)

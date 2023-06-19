@@ -26,7 +26,7 @@ export default function Register() {
       try {
         await signUp(email, password);
         toast('Inscrito com sucesso! Por favor, faça login.');
-        navigate('/sign-in');
+        navigate('/login');
       } catch (error) {
         toast('Não foi possível fazer o cadastro!');
         console.log('error: ', error)
@@ -51,7 +51,7 @@ export default function Register() {
         </form>
       </Row>
       <Row>
-        <Link to="/sign-in">Já está inscrito? Faça login</Link>
+        <Link to="/login">Já está inscrito? Faça login</Link>
       </Row>
     </AuthLayout>
   )
